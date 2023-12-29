@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneradorDePdfs", "GeneradorDePdfs\GeneradorDePdfs.csproj", "{62D747DE-FAB6-45B1-86C5-9A69A6F18EF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D747DE-FAB6-45B1-86C5-9A69A6F18EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D747DE-FAB6-45B1-86C5-9A69A6F18EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D747DE-FAB6-45B1-86C5-9A69A6F18EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D747DE-FAB6-45B1-86C5-9A69A6F18EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0EC7642-1A28-425B-93B0-078637F28509}
+	EndGlobalSection
+EndGlobal
