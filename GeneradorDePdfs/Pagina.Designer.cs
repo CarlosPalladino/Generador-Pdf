@@ -37,14 +37,14 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(213, 57);
+            dataGridView1.Location = new Point(223, 79);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(440, 298);
             dataGridView1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(12, 57);
+            pictureBox1.Location = new Point(22, 79);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(178, 298);
             pictureBox1.TabIndex = 1;

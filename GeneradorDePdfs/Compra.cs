@@ -16,5 +16,10 @@ namespace GeneradorDePdfs
         {
             InitializeComponent();
         }
+
+        private void Compra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
