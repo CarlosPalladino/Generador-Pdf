@@ -42,7 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos.cs" />
+    <Compile Include="LectorDeProductos.cs" />
+    <Compile Include="LectorDeVentas.cs" />
+    <Compile Include="LectorDeCompras.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLases\Clases.csproj">
+      <Project>{182d20b3-3b73-43c9-8ce8-704a572b7b77}</Project>
+      <Name>Clases</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace CLases
 {
-    public class Productos
+    public class Venta
     {
         public int Id { get; set; }
+        public int ProductoId { get; set; }
 
-        public string Nombre { get; set; }
-        public bool Stock { get; set; }
-        public int cantidad { get; set; }
+        public int Cantidad { get; set; }
         public decimal Precio { get; set; }
-        public decimal Valor { get; set; }
-
-
+        public DateTime Fecha { get; set; }
     }
 }

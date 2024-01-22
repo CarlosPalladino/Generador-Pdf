@@ -17,7 +17,7 @@ namespace AccesoDeDatos
         {
             get
             {
-                return Lector;
+                return lector;
 
             }
         }
@@ -31,7 +31,7 @@ namespace AccesoDeDatos
         }
         public void SetearConsultaConSorage(string consulta)
         {
-            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
             comando.CommandText = consulta;
 
 
