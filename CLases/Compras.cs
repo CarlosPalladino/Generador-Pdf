@@ -14,16 +14,6 @@ namespace CLases
         public int Cantidad { get; set; }
         public decimal  Precio { get; set; }
         public DateTime Fecha { get; set; }
-    
-
-
-
-
-
-
-
-
-
 
     }
 }

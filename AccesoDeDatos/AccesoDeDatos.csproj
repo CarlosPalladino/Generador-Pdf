@@ -45,6 +45,7 @@
     <Compile Include="LectorDeProductos.cs" />
     <Compile Include="LectorDeVentas.cs" />
     <Compile Include="LectorDeCompras.cs" />
+    <Compile Include="LectorDeProveedores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
