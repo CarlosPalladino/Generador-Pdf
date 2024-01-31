@@ -84,6 +84,7 @@ namespace AccesoDeDatos
         {
             try
             {
+                datos.SetearConsultaEmbebida("Delete  From Producto where Id =@Id");
                 datos.setearParametro("Id", Id);
                 datos.EjecturarLectura();
             }

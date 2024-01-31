@@ -12,7 +12,7 @@ namespace CLases
 
         AccesoADatos datos = new AccesoADatos();
 
-
+        //Falta
 
         public List<Compras> listar()
         {

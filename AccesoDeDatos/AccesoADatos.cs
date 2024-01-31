@@ -33,8 +33,12 @@ namespace AccesoDeDatos
         {
             comando.CommandType = System.Data.CommandType.StoredProcedure;
             comando.CommandText = consulta;
+        }
 
-
+        public void SetearConsultaEmbebida(string consulta)
+        {
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = consulta;
         }
         public void EjecturarLectura()
         {
