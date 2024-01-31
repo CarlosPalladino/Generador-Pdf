@@ -7,35 +7,42 @@ using System.Threading.Tasks;
 
 namespace CLases
 {
+    //Compras que hace el proveedor 
     public class LectorDeCompras
     {
-
         AccesoADatos datos = new AccesoADatos();
-
-        //Falta
-
-        public List<Compras> listar()
+        public void CrearCompra(Compras compra)
         {
-            List<Compras> lista = new List<Compras>();
             try
             {
+                datos.SetearConsultaConSorage("InsertCompra");
+                datos.setearParametro("@Íd", compra.Id);
+                datos.setearParametro("@Proveedorid", compra.PoveedorId);
+                datos.setearParametro("@ProductoId", compra.ProductoId);
+                datos.setearParametro("@Cantidad", compra.Cantidad);
+                datos.setearParametro("@Fecha", compra.Fecha);
+                datos.setearParametro("@Precio", compra.Precio);
+
+                datos.ejecutarAccion();
 
 
-                datos.SetearConsultaConSorage("");
-                datos.EjecturarLectura();
 
+            }
+            catch (Exception)
+            {
 
-                while (datos.Lector.Read())
-                {
-                    Compras aux = new Compras();
+                throw;
+            }
+        }
+        public void EliminarProductor(int Id)
+        {
+            try
+            {
+                datos.SetearConsultaEmbebida("Delete From Compra where Id =@Id");
 
-                    //aux.Id = (int)datos.Lector["Id"];
+                datos.setearParametro("@id", Id);
 
-
-                    lista.Add(aux);
-
-                }
-                return lista;
+                datos.ejecutarAccion();
 
             }
             catch (Exception ex)
@@ -43,52 +50,7 @@ namespace CLases
 
                 throw ex;
             }
-
-
         }
-
-
-        public void CrearProducto()
-        {
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-
-        public void ModificarProducto()
-        {
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-
-        public void EliminarProductor()
-        {
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
 
     }
 

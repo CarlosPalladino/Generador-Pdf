@@ -23,6 +23,13 @@ namespace AccesoDeDatos
                 {
                     Provedores aux = new Provedores();
                     aux.Nombre = (string)datos.Lector["Nombre"];
+
+
+
+
+
+
+
                 }
 
 
@@ -62,10 +69,6 @@ namespace AccesoDeDatos
                 datos.setearParametro("", provedores.Nombre);
                 datos.setearParametro("", provedores.Apellido);
                 datos.setearParametro("", provedores.Contacto);
-
-
-
-                Provedores aux = new Provedores();
 
 
 

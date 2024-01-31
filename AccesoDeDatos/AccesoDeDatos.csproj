@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos.cs" />
+    <Compile Include="LectorDeAdmin.cs" />
     <Compile Include="LectorDeProductos.cs" />
     <Compile Include="LectorDeVentas.cs" />
     <Compile Include="LectorDeCompras.cs" />
