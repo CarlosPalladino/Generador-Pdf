@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDeDatos", "AccesoDeDa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{E2D6DDD7-AA35-41CF-AE4D-3CD386737529}"
 	ProjectSection(SolutionItems) = preProject
-		..\Pdf.sql = ..\Pdf.sql
+		..\PDF.sql = ..\PDF.sql
 	EndProjectSection
 EndProject
 Global

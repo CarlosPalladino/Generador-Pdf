@@ -17,5 +17,6 @@ namespace CLases
         public decimal Valor { get; set; }
         public int ProvedoorId { get; set; }
 
+        public string Imagen {  get; set; }
     }
 }

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             dgvVista = new DataGridView();
-            pictureBox1 = new PictureBox();
-            button1 = new Button();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            PicImagen = new PictureBox();
+            BtnIngrsar = new Button();
+            LblFiltro = new Label();
+            txtFiltro = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvVista).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PicImagen).BeginInit();
             SuspendLayout();
             // 
             // dgvVista
@@ -46,54 +46,55 @@
             dgvVista.TabIndex = 0;
             dgvVista.CellContentClick += dgvVista_CellContentClick;
             // 
-            // pictureBox1
+            // PicImagen
             // 
-            pictureBox1.Location = new Point(22, 79);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(178, 298);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            PicImagen.Location = new Point(3, 79);
+            PicImagen.Name = "PicImagen";
+            PicImagen.Size = new Size(197, 298);
+            PicImagen.TabIndex = 1;
+            PicImagen.TabStop = false;
             // 
-            // button1
+            // BtnIngrsar
             // 
-            button1.Location = new Point(438, 30);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            BtnIngrsar.Location = new Point(588, 30);
+            BtnIngrsar.Name = "BtnIngrsar";
+            BtnIngrsar.Size = new Size(75, 23);
+            BtnIngrsar.TabIndex = 2;
+            BtnIngrsar.Text = "Ingresar";
+            BtnIngrsar.UseVisualStyleBackColor = true;
+            BtnIngrsar.Click += BtnIngrsar_Click;
             // 
-            // label1
+            // LblFiltro
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(73, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
+            LblFiltro.AutoSize = true;
+            LblFiltro.Location = new Point(3, 38);
+            LblFiltro.Name = "LblFiltro";
+            LblFiltro.Size = new Size(34, 15);
+            LblFiltro.TabIndex = 3;
+            LblFiltro.Text = "Filtro";
             // 
-            // textBox1
+            // txtFiltro
             // 
-            textBox1.Location = new Point(184, 30);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(137, 23);
-            textBox1.TabIndex = 4;
+            txtFiltro.Location = new Point(54, 30);
+            txtFiltro.Name = "txtFiltro";
+            txtFiltro.Size = new Size(137, 23);
+            txtFiltro.TabIndex = 4;
             // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(685, 450);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(button1);
-            Controls.Add(pictureBox1);
+            Controls.Add(txtFiltro);
+            Controls.Add(LblFiltro);
+            Controls.Add(BtnIngrsar);
+            Controls.Add(PicImagen);
             Controls.Add(dgvVista);
             Name = "Principal";
-            Text = "Form1";
+            Text = "General";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dgvVista).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PicImagen).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -101,9 +102,9 @@
         #endregion
 
         private DataGridView dgvVista;
-        private PictureBox pictureBox1;
-        private Button button1;
-        private Label label1;
-        private TextBox textBox1;
+        private PictureBox PicImagen;
+        private Button BtnIngrsar;
+        private Label LblFiltro;
+        private TextBox txtFiltro;
     }
 }

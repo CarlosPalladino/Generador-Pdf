@@ -51,8 +51,8 @@
             textBox9 = new TextBox();
             textBox10 = new TextBox();
             panelFondo = new Panel();
-            button1 = new Button();
             button2 = new Button();
+            button1 = new Button();
             panelFondo.SuspendLayout();
             SuspendLayout();
             // 
@@ -279,23 +279,23 @@
             panelFondo.Size = new Size(656, 375);
             panelFondo.TabIndex = 26;
             // 
-            // button1
-            // 
-            button1.Location = new Point(240, 348);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 24;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            button2.Location = new Point(360, 348);
+            button2.Location = new Point(363, 340);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 25;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(243, 340);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 24;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Venta
             // 

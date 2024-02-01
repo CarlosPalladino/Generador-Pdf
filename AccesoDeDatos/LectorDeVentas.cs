@@ -47,10 +47,12 @@ namespace AccesoDeDatos
             try
             {
                 datos.SetearConsultaConSorage("InsertVenta");
-                datos.setearParametro("",venta.Cantidad);
-                datos.setearParametro("",venta.Fecha);
-                datos.setearParametro("",venta.Precio);
-                datos.setearParametro("",venta.ProductoId);
+                datos.setearParametro("@ProductoId", venta.ProductoId);
+
+                datos.setearParametro("@ProductoId",venta.ProductoId);
+                datos.setearParametro("@Cantidad",venta.Cantidad);
+                datos.setearParametro("@Precio",venta.Precio);
+                datos.setearParametro("@Fecha",venta.Fecha);
 
 
             }
@@ -61,24 +63,7 @@ namespace AccesoDeDatos
             }
         }
 
-        public void ActualizarVenta(Venta venta)
-        {
-            try
-            {
-                datos.SetearConsultaConSorage("");
-                datos.setearParametro("", venta.Cantidad);
-                datos.setearParametro("", venta.Fecha);
-                datos.setearParametro("", venta.Precio);
-                datos.setearParametro("", venta.ProductoId);
 
-                datos.ejecutarAccion();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
         public void EliminarVenta(int Id)
         {
 
