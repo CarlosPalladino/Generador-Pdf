@@ -42,9 +42,11 @@
             dgvVista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvVista.Location = new Point(223, 79);
             dgvVista.Name = "dgvVista";
+            dgvVista.ReadOnly = true;
             dgvVista.Size = new Size(440, 298);
             dgvVista.TabIndex = 0;
             dgvVista.CellContentClick += dgvVista_CellContentClick;
+            dgvVista.SelectionChanged += dgvVista_SelectionChanged;
             // 
             // PicImagen
             // 

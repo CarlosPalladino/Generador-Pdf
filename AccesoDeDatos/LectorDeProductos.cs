@@ -10,7 +10,7 @@ namespace AccesoDeDatos
 {
     public class LectorDeProductos
     {
-        AccesoADatos datos = new AccesoADatos();
+        AccesoADatos  datos = new AccesoADatos();
 
         public List<Productos> listar()
         {

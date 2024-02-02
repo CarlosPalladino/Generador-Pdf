@@ -25,7 +25,7 @@ namespace AccesoDeDatos
 
         public AccesoADatos()
         {
-            conexion = new SqlConnection("Data Source=Carllosspc\\SQLEXPRESS;Initial Catalog=FacturasPdf;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            conexion = new SqlConnection("Data Source=Carllosspc\\SQLEXPRESS;Initial Catalog=FacturasPdf;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             comando = new SqlCommand("");
 
         }

@@ -21,12 +21,12 @@ namespace GeneradorDePdfs
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Cargar();
 
         }
 
         private void dgvVista_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
 
 
 
@@ -83,10 +83,9 @@ namespace GeneradorDePdfs
             }
         }
 
+        private void dgvVista_SelectionChanged(object sender, EventArgs e)
+        {
 
-
-
-
-
+        }
     }
 }

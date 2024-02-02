@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             button2 = new Button();
             lblCompra = new Label();
             label1 = new Label();
@@ -46,34 +45,27 @@
             textBox5 = new TextBox();
             textBox6 = new TextBox();
             panel1 = new Panel();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
-            // 
-            button1.Location = new Point(245, 376);
-            button1.Name = "button1";
-            button1.Size = new Size(80, 21);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            button2.Location = new Point(420, 376);
+            button2.Location = new Point(374, 358);
             button2.Name = "button2";
-            button2.Size = new Size(80, 21);
+            button2.Size = new Size(65, 34);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Agregar";
             button2.UseVisualStyleBackColor = true;
             // 
             // lblCompra
             // 
             lblCompra.AutoSize = true;
+            lblCompra.Font = new Font("Segoe UI", 12F);
             lblCompra.ForeColor = Color.AliceBlue;
-            lblCompra.Location = new Point(290, 17);
+            lblCompra.Location = new Point(265, 17);
             lblCompra.Name = "lblCompra";
-            lblCompra.Size = new Size(105, 15);
+            lblCompra.Size = new Size(138, 21);
             lblCompra.TabIndex = 2;
             lblCompra.Text = "Datos de Producto";
             // 
@@ -81,7 +73,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.AliceBlue;
-            label1.Location = new Point(69, 80);
+            label1.Location = new Point(53, 78);
             label1.Name = "label1";
             label1.Size = new Size(56, 15);
             label1.TabIndex = 3;
@@ -91,7 +83,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.AliceBlue;
-            label2.Location = new Point(387, 85);
+            label2.Location = new Point(238, 78);
             label2.Name = "label2";
             label2.Size = new Size(55, 15);
             label2.TabIndex = 4;
@@ -101,7 +93,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.AliceBlue;
-            label3.Location = new Point(69, 142);
+            label3.Location = new Point(438, 78);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 5;
@@ -117,10 +109,11 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F);
             label4.ForeColor = Color.AliceBlue;
-            label4.Location = new Point(290, 205);
+            label4.Location = new Point(265, 217);
             label4.Name = "label4";
-            label4.Size = new Size(108, 15);
+            label4.Size = new Size(141, 21);
             label4.TabIndex = 6;
             label4.Text = "Precio de Producto";
             // 
@@ -128,7 +121,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.AliceBlue;
-            label5.Location = new Point(268, 308);
+            label5.Location = new Point(241, 270);
             label5.Name = "label5";
             label5.Size = new Size(33, 15);
             label5.TabIndex = 9;
@@ -138,7 +131,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = Color.AliceBlue;
-            label6.Location = new Point(420, 254);
+            label6.Location = new Point(456, 270);
             label6.Name = "label6";
             label6.Size = new Size(22, 15);
             label6.TabIndex = 8;
@@ -148,7 +141,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.AliceBlue;
-            label7.Location = new Point(69, 254);
+            label7.Location = new Point(43, 270);
             label7.Name = "label7";
             label7.Size = new Size(40, 15);
             label7.TabIndex = 7;
@@ -156,42 +149,42 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(141, 77);
+            textBox1.Location = new Point(115, 70);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 10;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(471, 77);
+            textBox2.Location = new Point(303, 70);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 11;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(141, 139);
+            textBox3.Location = new Point(499, 70);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(100, 23);
             textBox3.TabIndex = 12;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(319, 300);
+            textBox4.Location = new Point(502, 262);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 23);
             textBox4.TabIndex = 13;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(141, 246);
+            textBox5.Location = new Point(118, 262);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(100, 23);
             textBox5.TabIndex = 14;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(471, 241);
+            textBox6.Location = new Point(306, 262);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(100, 23);
             textBox6.TabIndex = 15;
@@ -199,6 +192,7 @@
             // panel1
             // 
             panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(textBox6);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox4);
@@ -214,11 +208,19 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(lblCompra);
             panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
             panel1.Location = new Point(61, 11);
             panel1.Name = "panel1";
             panel1.Size = new Size(677, 420);
             panel1.TabIndex = 16;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(265, 358);
+            button1.Name = "button1";
+            button1.Size = new Size(65, 34);
+            button1.TabIndex = 16;
+            button1.Text = "Cancelar";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Compra
             // 
@@ -235,8 +237,6 @@
         }
 
         #endregion
-
-        private Button button1;
         private Button button2;
         private Label lblCompra;
         private Label label1;
@@ -254,5 +254,6 @@
         private TextBox textBox5;
         private TextBox textBox6;
         private Panel panel1;
+        private Button button1;
     }
 }
