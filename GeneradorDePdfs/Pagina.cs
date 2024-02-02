@@ -65,7 +65,7 @@ namespace GeneradorDePdfs
 
         public void OcultarColumnas()
         {
-            dgvVista.Columns[""].Visible = false;
+            //dgvVista.Columns[""].Visible = false;
 
         }
 

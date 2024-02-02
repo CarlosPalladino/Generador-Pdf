@@ -17,7 +17,8 @@ namespace AccesoDeDatos
             List<Productos> lista = new List<Productos>();
             try
             {
-                datos.SetearConsultaConSorage("GetPruductosVista");
+                datos.SetearConsultaConSorage("GetTodosProductosVista");
+                datos.EjecturarLectura();
                 while (datos.Lector.Read())
                 {
                     Productos aux = new Productos();

@@ -18,7 +18,6 @@ namespace AccesoDeDatos
             get
             {
                 return lector;
-
             }
         }
 
@@ -46,7 +45,7 @@ namespace AccesoDeDatos
 
             try
             {
-                conexion.OpenAsync();
+                conexion.Open();
                 lector = comando.ExecuteReader();
 
             }
