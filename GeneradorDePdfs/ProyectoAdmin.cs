@@ -23,33 +23,6 @@ namespace GeneradorDePdfs
 
         }
 
-        private void BtnIngresar_Click(object sender, EventArgs e)
-        {
-            LectorDeAdmin metodo = new LectorDeAdmin();
-            try
-            {
-                Admin user = new Admin();
-
-                user.Nombre = txtNombre.Text;
-                user.Contrasena = txtContrasena.Text;
-                if (metodo.Ingesar(user))
-                {
-                    Principal principal = new Principal();
-                    principal.ShowDialog();
-
-
-                }
-                else
-                    MessageBox.Show("llena todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
+      
     }
 }

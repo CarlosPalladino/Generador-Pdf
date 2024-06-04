@@ -30,7 +30,6 @@
         {
             dgvVista = new DataGridView();
             PicImagen = new PictureBox();
-            BtnIngrsar = new Button();
             LblFiltro = new Label();
             txtFiltro = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvVista).BeginInit();
@@ -40,7 +39,7 @@
             // dgvVista
             // 
             dgvVista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvVista.Location = new Point(223, 79);
+            dgvVista.Location = new Point(216, 79);
             dgvVista.Name = "dgvVista";
             dgvVista.ReadOnly = true;
             dgvVista.Size = new Size(440, 298);
@@ -56,31 +55,23 @@
             PicImagen.TabIndex = 1;
             PicImagen.TabStop = false;
             // 
-            // BtnIngrsar
-            // 
-            BtnIngrsar.Location = new Point(588, 30);
-            BtnIngrsar.Name = "BtnIngrsar";
-            BtnIngrsar.Size = new Size(75, 23);
-            BtnIngrsar.TabIndex = 2;
-            BtnIngrsar.Text = "Ingresar";
-            BtnIngrsar.UseVisualStyleBackColor = true;
-            BtnIngrsar.Click += BtnIngrsar_Click;
-            // 
             // LblFiltro
             // 
             LblFiltro.AutoSize = true;
-            LblFiltro.Location = new Point(3, 38);
+            LblFiltro.Location = new Point(187, 37);
             LblFiltro.Name = "LblFiltro";
             LblFiltro.Size = new Size(34, 15);
-            LblFiltro.TabIndex = 3;
+            LblFiltro.TabIndex = 4;
             LblFiltro.Text = "Filtro";
+            LblFiltro.Click += LblFiltro_Click;
             // 
             // txtFiltro
             // 
-            txtFiltro.Location = new Point(54, 30);
+            txtFiltro.Location = new Point(348, 29);
             txtFiltro.Name = "txtFiltro";
             txtFiltro.Size = new Size(137, 23);
             txtFiltro.TabIndex = 4;
+            txtFiltro.TextChanged += txtFiltro_TextChanged;
             // 
             // Principal
             // 
@@ -89,7 +80,6 @@
             ClientSize = new Size(685, 450);
             Controls.Add(txtFiltro);
             Controls.Add(LblFiltro);
-            Controls.Add(BtnIngrsar);
             Controls.Add(PicImagen);
             Controls.Add(dgvVista);
             Name = "Principal";
@@ -105,7 +95,6 @@
 
         private DataGridView dgvVista;
         private PictureBox PicImagen;
-        private Button BtnIngrsar;
         private Label LblFiltro;
         private TextBox txtFiltro;
     }

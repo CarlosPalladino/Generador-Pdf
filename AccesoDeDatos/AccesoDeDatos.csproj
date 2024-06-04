@@ -50,7 +50,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="LectorDeAdmin.cs" />
     <Compile Include="LectorDeProductos.cs" />
     <Compile Include="LectorDeVentas.cs" />
     <Compile Include="LectorDeCompras.cs" />

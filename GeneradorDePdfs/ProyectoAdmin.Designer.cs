@@ -34,9 +34,9 @@
             txtNombre = new TextBox();
             txtContrasena = new TextBox();
             BtnRegresar = new Button();
-            GruopDeLogib = new GroupBox();
+            test = new GroupBox();
             panel1 = new Panel();
-            GruopDeLogib.SuspendLayout();
+            test.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.ForeColor = Color.WhiteSmoke;
-            lblNombre.Location = new Point(43, 8);
+            lblNombre.Location = new Point(43, 34);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(51, 15);
             lblNombre.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             lblContraseña.AutoSize = true;
             lblContraseña.ForeColor = Color.WhiteSmoke;
-            lblContraseña.Location = new Point(43, 90);
+            lblContraseña.Location = new Point(43, 105);
             lblContraseña.Name = "lblContraseña";
             lblContraseña.Size = new Size(67, 15);
             lblContraseña.TabIndex = 2;
@@ -73,14 +73,14 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(43, 35);
+            txtNombre.Location = new Point(43, 68);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(242, 23);
             txtNombre.TabIndex = 3;
             // 
             // txtContrasena
             // 
-            txtContrasena.Location = new Point(43, 122);
+            txtContrasena.Location = new Point(43, 137);
             txtContrasena.Name = "txtContrasena";
             txtContrasena.Size = new Size(242, 23);
             txtContrasena.TabIndex = 4;
@@ -94,25 +94,24 @@
             BtnRegresar.Text = "Regresar";
             BtnRegresar.UseVisualStyleBackColor = true;
             // 
-            // GruopDeLogib
+            // test
             // 
-            GruopDeLogib.Controls.Add(BtnRegresar);
-            GruopDeLogib.Controls.Add(txtContrasena);
-            GruopDeLogib.Controls.Add(txtNombre);
-            GruopDeLogib.Controls.Add(lblContraseña);
-            GruopDeLogib.Controls.Add(lblNombre);
-            GruopDeLogib.Controls.Add(BtnIngresar);
-            GruopDeLogib.Location = new Point(95, 65);
-            GruopDeLogib.Name = "GruopDeLogib";
-            GruopDeLogib.Size = new Size(338, 249);
-            GruopDeLogib.TabIndex = 6;
-            GruopDeLogib.TabStop = false;
-            GruopDeLogib.Text = "groupBox1";
+            test.Controls.Add(BtnRegresar);
+            test.Controls.Add(txtContrasena);
+            test.Controls.Add(txtNombre);
+            test.Controls.Add(lblContraseña);
+            test.Controls.Add(lblNombre);
+            test.Controls.Add(BtnIngresar);
+            test.Location = new Point(99, 81);
+            test.Name = "test";
+            test.Size = new Size(338, 237);
+            test.TabIndex = 6;
+            test.TabStop = false;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
-            panel1.Controls.Add(GruopDeLogib);
+            panel1.BackColor = Color.Gray;
+            panel1.Controls.Add(test);
             panel1.Location = new Point(134, 32);
             panel1.Name = "panel1";
             panel1.Size = new Size(539, 390);
@@ -126,8 +125,8 @@
             Controls.Add(panel1);
             Name = "ProyectoAdmin";
             Text = "ProyectoAdmin";
-            GruopDeLogib.ResumeLayout(false);
-            GruopDeLogib.PerformLayout();
+            test.ResumeLayout(false);
+            test.PerformLayout();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -140,7 +139,7 @@
         private TextBox txtNombre;
         private TextBox txtContrasena;
         private Button BtnRegresar;
-        private GroupBox GruopDeLogib;
+        private GroupBox test;
         private Panel panel1;
     }
 }

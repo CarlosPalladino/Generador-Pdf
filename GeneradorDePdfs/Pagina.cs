@@ -12,7 +12,7 @@ namespace GeneradorDePdfs
     public partial class Principal : Form
     {
 
-        private List<Productos> lista;
+        private List<Productos> listaProductos;
 
         public Principal()
         {
@@ -36,7 +36,9 @@ namespace GeneradorDePdfs
 
         private void BtnIngrsar_Click(object sender, EventArgs e)
         {
+            ProyectoAdmin admin = new ProyectoAdmin();
 
+            admin.ShowDialog();
         }
 
 
@@ -46,11 +48,11 @@ namespace GeneradorDePdfs
 
             try
             {
-                lista = lector.listar();
-                dgvVista.DataSource = lista;
-                if (lista.Count > 0)
+                listaProductos = lector.listar();
+                dgvVista.DataSource = listaProductos;
+                if (listaProductos.Count > 0)
                 {
-                    CargarImagen(lista[0].Imagen);
+                    CargarImagen(listaProductos[0].Imagen);
                 }
                 OcultarColumnas();
             }
@@ -63,11 +65,16 @@ namespace GeneradorDePdfs
 
         }
 
+
         public void OcultarColumnas()
         {
-            //dgvVista.Columns[""].Visible = false;
+            dgvVista.Columns["Id"].Visible = false;
+            //if()
+            //dgvVista.Columns[""].Visible = true;
+
 
         }
+
 
         public void CargarImagen(string imagen)
         {
@@ -84,6 +91,24 @@ namespace GeneradorDePdfs
         }
 
         private void dgvVista_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblFiltro_Click(object sender, EventArgs e)
+        {
+            List<Productos> lista = new List<Productos>;
+            string filtro = txtFiltro.Text;
+
+            if (filtro.Length > 2)
+            {
+                lista = listaProductos.Where(p => p.Nombre.ToUpper().Contains(filtro.ToUpper())).ToList();
+            }
+            dgvVista.DataSource = null;
+            dgvVista.DataSource = lista;
+        }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
         {
 
         }
